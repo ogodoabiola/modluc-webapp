@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Logo } from "@/components/logo";
-import { BackgroundAnimation } from "@/components/ui-animation";
+import { BackgroundAnimation } from "./ui-animation";
 
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
@@ -54,11 +54,7 @@ function CountdownTimer() {
 
 export function ComingSoon() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[#1a1333]">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1333] via-[#2a1f4d] to-[#0c0817] animate-gradient-x"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#ff6b6b]/5 to-transparent animate-pulse"></div>
-      </div>
+    <div className="flex min-h-screen flex-col items-center justify-center p-4 relative bg-[#1a1333]">
       <BackgroundAnimation />
       <div className="max-w-md w-full space-y-12 text-center relative z-10">
         <div className="space-y-4 flex flex-col items-center">
