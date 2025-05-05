@@ -44,7 +44,7 @@ export function ComingSoon() {
           <CardHeader>
             <CardTitle>Coming Soon</CardTitle>
             <CardDescription>
-              We're working hard to bring you something amazing. Be the first to know when we launch.
+              We&apos;re working hard to bring you something amazing. Be the first to know when we launch.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -52,7 +52,7 @@ export function ComingSoon() {
               <div className="flex flex-col items-center space-y-2 py-4">
                 <CheckIcon className="h-12 w-12 text-green-500" />
                 <p className="font-medium">Thank you for subscribing!</p>
-                <p className="text-sm text-muted-foreground">We'll notify you when we launch.</p>
+                <p className="text-sm text-muted-foreground">We&apos;ll notify you when we launch.</p>
               </div>
             ) : (
               <Form {...form}>
